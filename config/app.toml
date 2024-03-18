@@ -1,0 +1,16 @@
+name = "movies"
+
+[http]
+  port = "8080"
+  swagger_path = ""
+
+[database]
+  system = "postgres"
+
+[env]
+  [env.postgres_dsn]
+    value = "postgres://postgres:dias2003dewex@localhost:5432/movies"
+  [env.access_ttl]
+    value = "15"
+  [env.refresh_ttl]
+    value = "150"
